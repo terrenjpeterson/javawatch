@@ -35,7 +35,8 @@ camera.vflip = True
 camera.hflip = True
 
 # set resolution of the camera - this should be about a 500kb file
-camera.resolution = (1200, 600)
+camera.resolution = (1200, 1600)
+camera.iso = 400
 camera.start_preview()
 
 # overlay timestamp on top of the photo and use a black background
