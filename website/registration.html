@@ -7,9 +7,10 @@
   <body>
     <div id="first" style="clear: both; text-align: center;">
       <h1>JavaWatch Registration</h1>
-      <a href="https://www.espn.com"><img src="https://s3.amazonaws.com/javawatchdrs/app_logo.png" width=400px></a>
+      <a href="index.html"><img src="https://s3.amazonaws.com/javawatchdrs/app_logo.png" width=400px></a>
+      <p>If you have purchased our first generation device, leave the Product Model ID as is. Then modify the serial number to match what is written on the back of your device.</p>
       <form action="form_action.asp" id="frm1">
-        <b>PRODUCT MODEL ID </b> <br />
+        <b>Product Model ID</b> <br />
         <input maxlength="36" name="pname" size="38" style="text-align: center;" type="text" value="Java_Watch" /><br /><br />
         <b>Serial Number</b><br />
         <input maxlength="12" name="sname" size="14" style="text-align: center;" type="text" value="coffee123" /><br /><br />
@@ -41,7 +42,7 @@ function lwaFunction() {
         var clientid = 'amzn1.application-oa2-client.f90d420ba0e94417950e6e1dfb4ec239';
         var serialno = String(x1.elements[1].value);
 
-	window.open("https://www.amazon.com/ap/oa?client_id=amzn1.application-oa2-client.f90d420ba0e94417950e6e1dfb4ec239&scope=dash%3Areplenish&scope_data=%7B%22dash%3Areplenish%22%3A%7B%22device_model%22%3A%22"+productid+"%22%2C%22serial%22%3A%22"+serialno+"%22%2C%22is_test_device%22%3Atrue%7D%7D&response_type=code&redirect_uri=https%3A%2F%2Fs3.amazonaws.com%2Fjavawatchdrs%2Fregistration.html");
+	window.open("https://www.amazon.com/ap/oa?client_id=amzn1.application-oa2-client.f90d420ba0e94417950e6e1dfb4ec239&scope=dash%3Areplenish&scope_data=%7B%22dash%3Areplenish%22%3A%7B%22device_model%22%3A%22"+productid+"%22%2C%22serial%22%3A%22"+serialno+"%22%2C%22is_test_device%22%3Atrue%7D%7D&response_type=code&redirect_uri=https%3A%2F%2Fs3.amazonaws.com%2Fjavawatchdrs%2Fconfirm.html");
     }
 }
 
